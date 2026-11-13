@@ -53,17 +53,6 @@ jobs:
             libffi-dev \
             libssl-dev
 
-      - name: Accept Android SDK Licenses
-        run: |
-          yes | sdkmanager --licenses || true
-
-      - name: Install Android SDK Packages
-        run: |
-          sdkmanager \
-            "platform-tools" \
-            "platforms;android-33" \
-            "build-tools;34.0.0"
-
       - name: Install Buildozer
         run: |
           python -m pip install --upgrade pip
