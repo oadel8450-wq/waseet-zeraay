@@ -1,4 +1,5 @@
 
+:
 [app]
 
 title = WASEET AL-KHAIR 3
@@ -9,10 +10,10 @@ package.domain = org.adelgru
 source.dir = .
 source.include_exts = py,kv,png,jpg,jpeg,atlas,ttf,json,db
 
-version = 3.0.0
+version = 3.0.22
 
 # Python and Kivy Requirements
-requirements = python3==3.10.13,kivy==2.3.0
+requirements = python3==3.10.22,kivy==2.3.0
 
 orientation = portrait
 fullscreen = 0
@@ -38,9 +39,6 @@ p4a.branch = master
 
 # Android Build Settings
 android.enable_androidx = True
-
-# Include application files
-source.include_patterns = *.py,*.kv,*.png,*.jpg,*.jpeg,*.atlas,*.ttf,*.json,*.db
 
 
 [buildozer]
