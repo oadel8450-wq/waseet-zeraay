@@ -2,57 +2,48 @@
 [app]
 
 title = WASEET AL-KHAIR 3
-package.name = waseetalkhair
-package.domain = org.aldlgroup
+
+package.name = waseetalkhair3
+package.domain = org.adelgru
 
 source.dir = .
-source.include_exts = py,png,jpg,jpeg,kv,atlas,db
+source.include_exts = py,kv,png,jpg,jpeg,atlas,ttf,json,db
 
-version = 3.0
+version = 3.0.0
 
-requirements = python3,kivy
+# Python and Kivy Requirements
+requirements = python3,kivy==2.3.0
 
 orientation = portrait
-
 fullscreen = 0
 
-# Android configuration
-android.permissions = INTERNET,ACCESS_NETWORK_STATE
+# Android Permissions
+android.permissions = INTERNET,ACCESS_NETWORK_STATE,VIBRATE
 
-android.api = 35
-android.minapi = 23
-android.ndk = 27c
-android.ndk_api = 23
+# Android SDK
+android.api = 33
+android.minapi = 24
+android.ndk = 25b
+android.ndk_api = 24
 
-android.archs = arm64-v8a, armeabi-v7a
+# Android Architectures
+android.archs = arm64-v8a,armeabi-v7a
 
+# Accept Android SDK License
 android.accept_sdk_license = True
 
+# Python-for-Android
+p4a.bootstrap = sdl2
+p4a.branch = master
+
+# Android Build Settings
 android.enable_androidx = True
 
-# Android build settings
-android.private_storage = True
+# Include application files
+source.include_patterns = *.py,*.kv,*.png,*.jpg,*.jpeg,*.atlas,*.ttf,*.json,*.db
 
-android.allow_backup = True
-
-android.copy_libs = 1
-
-android.release_artifact = apk
-
-# Java configuration
-android.add_compile_options = -fPIC
-
-# Application settings
-android.entrypoint = org.kivy.android.PythonActivity
-
-# Include project files
-source.exclude_dirs = .git, .github, .buildozer, bin, __pycache__
-
-# Build settings
-p4a.branch = develop
 
 [buildozer]
 
 log_level = 2
-
-warn_on_root = 1
+warn_on_root = 0
