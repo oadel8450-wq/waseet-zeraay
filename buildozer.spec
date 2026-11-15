@@ -12,7 +12,8 @@ source.include_exts = py,kv,png,jpg,jpeg,atlas,ttf,json,db
 version = 3.0.22
 
 # Python and Kivy Requirements
-
+p4a.branch = v2024.01.21
+p4a.bootstrap = sdl2
 requirements = python3,kivy
 orientation = portrait
 fullscreen = 0
