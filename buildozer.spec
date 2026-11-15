@@ -12,8 +12,8 @@ source.include_exts = py,kv,png,jpg,jpeg,atlas,ttf,json,db
 version = 3.0.22
 
 # Python and Kivy Requirements
-requirements = python3,kivy
 
+requirements = python3,kivy,pyjnius==1.9.0
 orientation = portrait
 fullscreen = 0
 
